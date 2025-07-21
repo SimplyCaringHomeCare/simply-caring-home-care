@@ -135,3 +135,21 @@ body {
   background: #222;
   color: #aaa;
 }
+
+
+body {
+  background: var(--light-purple) url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  background-size: cover;
+}
+
+h2::before, h2::after {
+  content: "✨";
+  margin: 0 0.5rem;
+  color: var(--gold);
+  animation: sparkle 2s infinite alternate;
+}
+
+@keyframes sparkle {
+  0% { opacity: 0.5; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.2); }
+}
